@@ -1,1 +1,1 @@
-# README-Generator
+{"title":"asdf","description":"asdf","installation":"asdf","usage":"asdf","guidelines":"asdf","test":"asdf","licensing":["Apache","MIT","MOZILLA-PUBLIC","GNU-General-Public","Common-Development-and Distribution","None"],"github":"ds","email":""}
