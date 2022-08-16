@@ -10,8 +10,6 @@
 function init() {}
 
 // Function call to initialize app
-init();
-
 
 
 const fs = require('fs');
@@ -65,9 +63,11 @@ inquirer
             message: 'Enter your email.',
             name: 'email'
         },
-    ]).then(answer => {
-        console.log(answer);
-        fs.writeFile('readme.md', JSON.stringify(answer), (err) =>
+    ]).then(data => {
+        console.log(data);
+        fs.writeFile('readme.md', JSON.stringify(data), (err) =>
         err ? console.lerror(err) : console.log('Success!')
         );
     })
+
+    init();
