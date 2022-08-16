@@ -15,13 +15,10 @@
 function generateMarkdown(data) {
   return `# ${data.title} #
 
-## Repository ##
-
-${data.title}
-
 ## Description ##
 
 ${data.description}
+[![License](https://img.shields.io/badge/License-${data.licensing}-blue.svg)](https://opensource.org/licenses/${data.licensing})
 
 ## Installation Instructions ##
 

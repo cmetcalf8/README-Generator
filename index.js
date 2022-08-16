@@ -7,13 +7,14 @@
 // function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+// function init() {}
 
 // Function call to initialize app
 
 
 const fs = require('fs');
 const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 inquirer
     .prompt([
@@ -48,9 +49,9 @@ inquirer
             name: 'test'
         },
         {
-            type: 'checkbox',
+            type: 'list',
             message: 'Choose a license for your project.',
-            choices: ['Apache', 'MIT', 'MOZILLA-PUBLIC', 'GNU-General-Public', 'Common-Development-and Distribution', 'None'],
+            choices: ['Apache_2.0', 'MIT', 'MPL_2.0', 'OFL_1.1', 'Zlib'],
             name: 'licensing'
         },
         {
@@ -65,8 +66,8 @@ inquirer
         },
     ]).then(data => {
         console.log(data);
-        fs.writeFile('readme.md', JSON.stringify(data), (err) =>
-        err ? console.lerror(err) : console.log('Success!')
+        fs.writeFile('readme.md', generateMarkdown(data), (err) =>
+        err ? console.lerror(err) : console.log('Your README has been created!')
         );
     })
 
