@@ -1,35 +1,35 @@
-# asdf #
+# README Generator #
 
 ## Description ##
 
-asdf
-[![License](https://img.shields.io/badge/License-MOZILLA-PUBLIC-blue.svg)](https://opensource.org/licenses/MOZILLA-PUBLIC)
+Created a professional REAMDE generator using the Inquirer package for this applicaiton. Then used a WriteFile function to make the README.md. Then Generate Markdown file was used to pull in the data as well as the licensing icons. 
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache_2.0)
 
 ## Installation Instructions ##
 
-asdf
+Open the terminal in VS Code. Input "node index.js". Fill out all the questions.
 
 ## Usage ##
 
-asdf
+This application makes it easy and saves time when creating READMEs for your projects. 
 
 ## Guidelines ##
 
-asdf
+If you are going to contribute to this project, make sure it's good and run it by me, Cory.
 
 ## Test Instructions ##
 
-asdf
+You can run tests in node to make sure everything is working properly. 
 
 ## License ##
 
-MOZILLA-PUBLIC
+Apache_2.0
 
 ## Github ##
 
-asdf
+https://github.com/cmetcalf8/README-Generator
 
 ## Email ##
 
-asdf
+cmetcalf8@gmail.com
 
